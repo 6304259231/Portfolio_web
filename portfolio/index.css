@@ -1,0 +1,284 @@
+body {
+    background-color: #323538 !important;
+    font-family: 'Rubik', sans-serif;
+    width: 100% !important;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+#nav-bar {
+    margin: 0px;
+    box-shadow: 2px 2px 5px rgb(251, 165, 165);
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.nav-item {
+    margin: 5px;
+    font-family: 'Rubik' , monospace;
+}
+
+nav .active {
+    color: tomato !important;
+}
+
+
+#intro-section .carrer-card h5 {
+    color: #ffffff;
+    letter-spacing: 2.5px;
+    line-height: 1.5;
+}
+
+#intro-section .prof-img {
+    height: 510px;
+    width: 350px;
+    text-align: center;
+    padding: 4px;
+    border-radius: 15px;
+    white-space: wrap;
+    box-shadow: 5px 5px 10px black;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 85%;
+    border-radius: 20px;
+    border: 2px solid #007bff;
+}
+
+#intro-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.carrer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    border-radius: 10px;
+    width: 55%;
+    margin: 20px;
+    padding: 22px;
+}
+
+.title-head {
+    color: #007bff;
+    font-size: 38px;
+    font-family: monospace;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.social-media-section {
+    display: flex;
+    gap: 40px;
+}
+
+
+/* education-section */
+#edu-section,
+#tech-skills,
+#experience-section,
+#project-section,
+#certification-section {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 20px;
+    padding: 20px;
+}
+
+.cards-edu {
+    width: 80%;
+    margin-top: 30px;
+    height: 180px;
+    min-height: 200px;
+    line-height: 2;
+}
+
+/* technical-skills */
+
+.skills-card h3 {
+    font-family: 'Rubik', sans-serif;
+    color: aliceblue;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 12px;
+}
+
+#tech-skills .skills-card img {
+    height: 100px;
+    width: 100px;
+    border-radius: 14px;
+    box-shadow: 5px 6px 10px black;
+
+}
+
+.skills-card {
+    margin: 25px;
+}
+
+.skills-card .skills_logos {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 22px;
+
+}
+
+.skills-card .skills_logos img:hover {
+    cursor: pointer;
+    transform: scale(1.4);
+    transition: transform 0.8s ease;
+}
+
+/* experience-section */
+
+.card {
+    width: 85%;
+    margin: 25px auto;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: transform 0.6s ease;
+}
+
+.organization-details {
+    display: flex;
+    gap: 28px;
+}
+
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-text {
+    letter-spacing: 1.7px !important;
+    text-align: justify;
+    opacity: 0.8;
+    font-family: 'Rubik', sans-serif;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+}
+
+/* footer-section */
+footer {
+    width: 100%;
+    background-color: #1c1b1e;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 4% 8%;
+    margin-top: 50px;
+    box-shadow: 5px 2px 2px grey;
+    border-radius: 5px;
+}
+
+.footer-heading {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    opacity: 0.7;
+    letter-spacing: 1px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-top: 16px;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+    font-size: 16px;
+    opacity: 0.6;
+}
+
+footer a {
+    color: rgb(0, 75, 145);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media only screen and (max-width : 740px) {
+    footer {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: flex-start !important;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    body #App{
+        width: 100vw !important;
+    }
+    #nav-bar .navbar{
+        width: 100% !important;
+    }
+    #intro-section , #edu-section , #tech-skills , #experience-section , #certification-section , #footer-section , #project-section{
+        text-align: left;
+        padding: 4px;
+        width: 100% !important;
+        flex-direction: column !important;
+        align-items: left;
+        margin-left: 4px;
+    }
+    .card{
+        width: 95vw !important;
+        height: auto;
+        margin-left: 1px;
+    }
+
+    #intro-section .prof-img {
+        margin: 20px auto !important;
+        height: auto;
+        width: 220px;
+        text-align: center;
+        padding: 6px;
+    }
+    #intro-section .carrer-card{
+        width: 100% !important;
+        margin-left: 2px;
+    }
+    #intro-section .carrer-card h5{
+        width: 100% !important;
+        margin: 2px;
+        padding: 2px;
+        text-align: left;
+    }
+    .skills-card .skills_logos {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 22px;
+        justify-content: flex-start !important;
+    }
+    .prof-img img {
+        height: auto;
+        width: 100%;
+    }
+    .card-text {
+        font-size: 15px !important;
+        padding: 2px !important;
+    }
+    .organization-details{
+        justify-content: center;
+
+    }
+
+}
